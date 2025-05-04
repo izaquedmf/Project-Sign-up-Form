@@ -12,17 +12,37 @@
 
 html, body {
     height: 100%;
-  }
+}
 
 footer{
     font-size: 0.7rem;
     margin-top: auto;
     padding-bottom: 15px;
+    text-align: center;
+    
 }
 
 a{
     color:inherit;
 }
+
+header{
+    margin: 10% 5% 2%;
+}
+
+header h1,p {
+    font-size: 1.4rem; 
+    line-height: 1.2;  
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05); 
+    font-weight:bold;
+
+}
+
+header p {
+    margin-top: 3rem;             /* Espaço entre os parágrafos */
+    margin-bottom: 4rem;
+}
+
 
 #container{
     display: flex;
@@ -30,7 +50,7 @@ a{
 }
 
 #logo {    
-   position: absolute;
+position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);    
@@ -43,12 +63,56 @@ a{
 
 #left-image{
     display: flex;
-    flex: 1;
+    flex-direction: column; 
+    flex: 0 0 40%;
     background-image: url(./resources/photo-1585202900225-6d3ac20a6962.avif);
     background-size: cover;
     background-position: center;
     position: relative;
     color: white;
+}
+
+#right_container{
+    background-color: #f7f7f7;
+}
+
+.form_create_account{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 30px;   
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#fields{
+    display: flex;
+    gap: 100px;
+}
+
+#left_fields, #right_fields{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 
